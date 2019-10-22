@@ -1,0 +1,179 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\657f026c66285bf1074fe7df0b0f714d\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\9cc3a9ca4f5d42a219d7cf074a0e3d9d\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\77406a1fa492d6683984b97333fabb48\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\4fefc1fdc2a3c6504fc3692b0c4efe47\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\cf5997408b25d4d5b5fddbb7fc7ab9d1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\babbaa4fc9e66939d4c989e326467b55\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\54879fb96d460238e95dc196bc408bbd\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\2262409968838c314267d06ce177bb3b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\ffc57b7bb3013b58aac47f7e4969c51a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\7228d956bf18b42bbf0d85c6b640c8d1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\fc7aaa7c454cb0a6cbef32850a12434e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\88cc44d40ff33f271926332bb79c4fae\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\96cddd95cf50bb63b583f24c12d1c982\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\0aaf006a44159a29b03b480992c4ced8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\e80904cd0e5dd53b76679ba229df525c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\3bef42c58aadccf8cfe20503b9135cb6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\6ea17dc7c3760dc53a26d564c0f63569\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\4679890f7163b381454326b8e7318ee7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\84048e7864b0bc6e95c1975543d3f08c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8949e5280999c83713034d62673172fd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\48850d06c4d637e1208ef88279231c7e\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\918151b0cf50407774ce3b4d3d11b592\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\30f6095f929cc541da458dfe319948f1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\667ee0c3a45b323868ab1447e0e7657f\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\98efe27bbc6483ec56518365e838df81\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\6715f2a25c0c13d8366110428e447f96\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\524e6e300bf9181ac4034cf717efc9a8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\a4a453b6d1efe48a6a68167774f79398\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\52cfb3b5f934853e0afcf9bf36c757e5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\89f954f92d02ac9b9561ec90280c528b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\5923b061e950cb0284076a7bb69ceb59\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\cdc10223e15594d424cae00870978f1b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\9145ebb1936bf343a9af8bb79df2dcda\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8fd99d628ed28a87c26fde021036b7f1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:3:5-57
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:5:5-21:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\657f026c66285bf1074fe7df0b0f714d\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\657f026c66285bf1074fe7df0b0f714d\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\77406a1fa492d6683984b97333fabb48\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\77406a1fa492d6683984b97333fabb48\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\48850d06c4d637e1208ef88279231c7e\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\48850d06c4d637e1208ef88279231c7e\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\667ee0c3a45b323868ab1447e0e7657f\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\667ee0c3a45b323868ab1447e0e7657f\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\48850d06c4d637e1208ef88279231c7e\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.mobilesupervisor_supervisorapp.MainActivity
+ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:14:13-45
+	android:name
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\657f026c66285bf1074fe7df0b0f714d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\657f026c66285bf1074fe7df0b0f714d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\9cc3a9ca4f5d42a219d7cf074a0e3d9d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\9cc3a9ca4f5d42a219d7cf074a0e3d9d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\77406a1fa492d6683984b97333fabb48\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\77406a1fa492d6683984b97333fabb48\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\4fefc1fdc2a3c6504fc3692b0c4efe47\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\4fefc1fdc2a3c6504fc3692b0c4efe47\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\cf5997408b25d4d5b5fddbb7fc7ab9d1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\cf5997408b25d4d5b5fddbb7fc7ab9d1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\babbaa4fc9e66939d4c989e326467b55\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\babbaa4fc9e66939d4c989e326467b55\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\54879fb96d460238e95dc196bc408bbd\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\54879fb96d460238e95dc196bc408bbd\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\2262409968838c314267d06ce177bb3b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\2262409968838c314267d06ce177bb3b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\ffc57b7bb3013b58aac47f7e4969c51a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\ffc57b7bb3013b58aac47f7e4969c51a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\7228d956bf18b42bbf0d85c6b640c8d1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\7228d956bf18b42bbf0d85c6b640c8d1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\fc7aaa7c454cb0a6cbef32850a12434e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\fc7aaa7c454cb0a6cbef32850a12434e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\88cc44d40ff33f271926332bb79c4fae\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\88cc44d40ff33f271926332bb79c4fae\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\96cddd95cf50bb63b583f24c12d1c982\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\96cddd95cf50bb63b583f24c12d1c982\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\0aaf006a44159a29b03b480992c4ced8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\0aaf006a44159a29b03b480992c4ced8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\e80904cd0e5dd53b76679ba229df525c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\e80904cd0e5dd53b76679ba229df525c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\3bef42c58aadccf8cfe20503b9135cb6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\3bef42c58aadccf8cfe20503b9135cb6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\6ea17dc7c3760dc53a26d564c0f63569\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\6ea17dc7c3760dc53a26d564c0f63569\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\4679890f7163b381454326b8e7318ee7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\4679890f7163b381454326b8e7318ee7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\84048e7864b0bc6e95c1975543d3f08c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\84048e7864b0bc6e95c1975543d3f08c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8949e5280999c83713034d62673172fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8949e5280999c83713034d62673172fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\48850d06c4d637e1208ef88279231c7e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\48850d06c4d637e1208ef88279231c7e\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\918151b0cf50407774ce3b4d3d11b592\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\918151b0cf50407774ce3b4d3d11b592\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\30f6095f929cc541da458dfe319948f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\30f6095f929cc541da458dfe319948f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\667ee0c3a45b323868ab1447e0e7657f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\667ee0c3a45b323868ab1447e0e7657f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\98efe27bbc6483ec56518365e838df81\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\98efe27bbc6483ec56518365e838df81\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\6715f2a25c0c13d8366110428e447f96\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\6715f2a25c0c13d8366110428e447f96\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\524e6e300bf9181ac4034cf717efc9a8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\524e6e300bf9181ac4034cf717efc9a8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\a4a453b6d1efe48a6a68167774f79398\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\a4a453b6d1efe48a6a68167774f79398\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\52cfb3b5f934853e0afcf9bf36c757e5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\52cfb3b5f934853e0afcf9bf36c757e5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\89f954f92d02ac9b9561ec90280c528b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\89f954f92d02ac9b9561ec90280c528b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\5923b061e950cb0284076a7bb69ceb59\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\5923b061e950cb0284076a7bb69ceb59\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\cdc10223e15594d424cae00870978f1b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\cdc10223e15594d424cae00870978f1b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\9145ebb1936bf343a9af8bb79df2dcda\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\9145ebb1936bf343a9af8bb79df2dcda\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8fd99d628ed28a87c26fde021036b7f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8fd99d628ed28a87c26fde021036b7f1\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml
