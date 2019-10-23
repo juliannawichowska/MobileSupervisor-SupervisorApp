@@ -1,5 +1,6 @@
 package com.example.mobilesupervisor_supervisorapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -20,13 +21,11 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_message:
-                    mTextMessage.setText(R.string.title_message);
-                    return true;
+                    Intent a = new Intent(MainActivity.this,MessageActivity.class);
+                    startActivity(a);
+                    break;
                 case R.id.navigation_video:
                     mTextMessage.setText(R.string.title_video);
-                    return true;
-                case R.id.navigation_camera:
-                    mTextMessage.setText(R.string.title_camera);
                     return true;
                 case R.id.navigation_history:
                     mTextMessage.setText(R.string.title_history);
