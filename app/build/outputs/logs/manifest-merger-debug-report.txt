@@ -23,6 +23,7 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Lucek\.gradl
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\56c279a671c82d6df1b4df7ec25b73e3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\c18f7bfa7c74457c0f296373ca6dac47\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\d8994b1b1b946ce404177c5bc2cbd5f1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\b6e6205cb63de32d464f0dc2da289984\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\82a4d2fd36e13c8549ae46ddcb6859ac\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\f9afe8d14b139a610e697d5321031b2d\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\92eaa5b3428072a29bdce2afe0df40db\AndroidManifest.xml:17:1-24:12
@@ -31,7 +32,6 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Lucek\
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\39100f2a11b9014652eea874a999aedf\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8262f8c54a8080893fdcc6ea9ba724ad\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\982bb0ae06bd35901bec1406da1c3509\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\b6e6205cb63de32d464f0dc2da289984\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\f0da07720f7bc9655df6ed2c85157a7e\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\66bdd32ef13eb61b0e4e00bdbef6c61a\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\2c876f6f55c140351e1a469f256a7ce2\AndroidManifest.xml:17:1-22:12
@@ -96,7 +96,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Lu
 	android:theme
 		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.example.mobilesupervisor_supervisorapp.MessageActivity
-ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:12:9-62
+ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:12:9-53
 	android:name
 		ADDED from C:\Users\Lucek\AndroidStudioProjects\MobileSupervisor-supervisorApp\app\src\main\AndroidManifest.xml:12:19-50
 activity#com.example.mobilesupervisor_supervisorapp.MainActivity
@@ -157,6 +157,8 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lucek\.gr
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\c18f7bfa7c74457c0f296373ca6dac47\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\d8994b1b1b946ce404177c5bc2cbd5f1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\d8994b1b1b946ce404177c5bc2cbd5f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\b6e6205cb63de32d464f0dc2da289984\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\b6e6205cb63de32d464f0dc2da289984\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\82a4d2fd36e13c8549ae46ddcb6859ac\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\82a4d2fd36e13c8549ae46ddcb6859ac\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\f9afe8d14b139a610e697d5321031b2d\AndroidManifest.xml:20:5-44
@@ -173,8 +175,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Luce
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\8262f8c54a8080893fdcc6ea9ba724ad\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\982bb0ae06bd35901bec1406da1c3509\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\982bb0ae06bd35901bec1406da1c3509\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\b6e6205cb63de32d464f0dc2da289984\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\b6e6205cb63de32d464f0dc2da289984\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\f0da07720f7bc9655df6ed2c85157a7e\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\f0da07720f7bc9655df6ed2c85157a7e\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lucek\.gradle\caches\transforms-2\files-2.1\66bdd32ef13eb61b0e4e00bdbef6c61a\AndroidManifest.xml:20:5-44
