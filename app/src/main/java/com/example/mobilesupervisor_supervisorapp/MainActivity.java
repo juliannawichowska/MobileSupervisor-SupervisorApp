@@ -8,16 +8,38 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.fitness.FitnessOptions;
+import com.google.android.gms.fitness.data.DataType;
+import android.content.Intent;
+import android.os.Bundle;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.fitness.FitnessOptions;
+import com.google.android.gms.fitness.data.DataType;
 
 public class MainActivity extends AppCompatActivity {
 
     ActionBar actionBar;
-
+    final int GOOGLE_FIT_PERMISSIONS_REQUEST_CODE = System.identityHashCode(this) & 0xFFFF;
 
 
 
@@ -26,6 +48,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        FitnessOptions fitnessOptions = FitnessOptions.builder()
+                .addDataType(DataType.TYPE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_READ)
+                .addDataType(DataType.AGGREGATE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_READ)
+                .build();
+        if (!GoogleSignIn.hasPermissions(account, fitnessOptions)) {
+            GoogleSignIn.requestPermissions(
+                    this,
+                    GOOGLE_FIT_PERMISSIONS_REQUEST_CODE,
+                    account,
+                    fitnessOptions
+            );
+
+        }
+        else {
+            accessGoogleFit();
+        }
 
         //ActionBar and its title
         actionBar = getSupportActionBar();
@@ -41,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
         ft3.replace(R.id.content,fragment3,"");
         ft3.commit();
 
+    }
+
+    private void accessGoogleFit() {
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener selectedListener =
