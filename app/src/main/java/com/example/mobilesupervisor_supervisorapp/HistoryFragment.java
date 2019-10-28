@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,8 +19,10 @@ import android.view.ViewGroup;
 public class HistoryFragment extends Fragment {
 
 
+
     public HistoryFragment() {
         // Required empty public constructor
+
     }
 
 

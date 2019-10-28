@@ -7,6 +7,16 @@
     android:background = "#8BA48D"
     tools:context=".MessageActivity">
 
+    <!-- Recycler View -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/chatLayout"
         android:layout_width="match_parent"

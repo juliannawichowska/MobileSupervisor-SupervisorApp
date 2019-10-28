@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MobileSupervisor-supervisorApplication.iml" filepath="$PROJECT_DIR$/MobileSupervisor-supervisorApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/supervisor.iml" filepath="$PROJECT_DIR$/supervisor.iml" />
     </modules>
   </component>
 </project>
