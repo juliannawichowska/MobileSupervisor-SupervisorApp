@@ -39,6 +39,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:textAlignment="textEnd"
-        android:text="delivered"/>
+        android:text="elo"/>
 
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.mobilesupervisor_supervisorapp;
 
 import android.content.Context;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -28,10 +31,16 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder>{
 
     FirebaseUser firebaseUser;
 
+    private static final String TAG = "MyAppTag";
+
+
     public AdapterChat(Context context, List<ModelChat> chatList) {
         this.context = context;
         this.chatList = chatList;
+        Log.d(TAG, "1");
     }
+
+
 
     @NonNull
     @Override
@@ -39,10 +48,12 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder>{
         //inflate layouts
         if(i==MSG_TYPE_RIGHT){
             View view = LayoutInflater.from(context).inflate(R.layout.sender_chat, viewGroup, false);
+
             return new MyHolder(view);
         } else {
             View view = LayoutInflater.from(context).inflate(R.layout.receiver_chat, viewGroup, false);
             return new MyHolder(view);
+
         }
     }
 
@@ -53,9 +64,17 @@ public class AdapterChat extends RecyclerView.Adapter<AdapterChat.MyHolder>{
         String timestamp = chatList.get(i).getTimestamp();
 
         //convert time
-        Calendar cal = Calendar.getInstance(Locale.ENGLISH);
+        Calendar cal = Calendar.getInstance(Locale.GERMAN);
         cal.setTimeInMillis(Long.parseLong(timestamp));
         String dateTime = DateFormat.format("dd/MM/yyyy hh:mm aa", cal).toString();
+
+       // Date date = Calendar.getInstance().getTime();
+        //SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        //String dateTime  = dateFormat.format(date);
+
+        Log.d(TAG, "niedzwiedz");
+
+
 
         //set data
         myHolder.messageContents.setText(message);

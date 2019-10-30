@@ -12,6 +12,7 @@ import android.graphics.ColorSpace;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -49,6 +50,8 @@ public class MessageActivity extends AppCompatActivity {
     String hisUid = "pXXgJXa0dwbGxdr5XOAyzvAxlJf1";
     String myUid = "tS1fyOTPLaPxjj8OfofcnfOKQk82";
 
+
+
     //check if user has seen message
     ValueEventListener seenListener;
     DatabaseReference userRefForSeen;
@@ -56,10 +59,14 @@ public class MessageActivity extends AppCompatActivity {
     List<ModelChat> chatList;
     AdapterChat adapterChat;
 
+    private static final String TAG = "MyAppTag";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
+
+        Log.d(TAG, "2");
 
         messageEdit = findViewById(R.id.messageEdit);
         sendButton = findViewById(R.id.sendButton);
@@ -94,10 +101,13 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
+        Log.d(TAG, "niedzwiedz");
 
         readMessages();
+        Log.d(TAG, "4");
 
         seenMessage();
+        Log.d(TAG, "5");
 
     }
 
@@ -105,18 +115,21 @@ public class MessageActivity extends AppCompatActivity {
         //get current user
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if (user != null) {
-
+            Log.d(TAG, "20");
         } else {
-            startActivity(new Intent(this, MainActivity.class));
-            finish();
+            Log.d(TAG, "10");
+            //startActivity(new Intent(this, MainActivity.class));
+            Toast.makeText(MessageActivity.this, "elooo", Toast.LENGTH_LONG).show();
+            //finish();
         }
     }
 
-    //@Override
-    //protected void onStart() {
-    //    checkUserStatus();
-    //    super.onStart();
-    //}
+    @Override
+    protected void onStart() {
+        Log.d(TAG, "elo");
+        checkUserStatus();
+        super.onStart();
+    }
 
     @Override
     protected void onPause() {
@@ -135,7 +148,7 @@ public class MessageActivity extends AppCompatActivity {
                     ModelChat chat = ds.getValue(ModelChat.class);
                     if(chat.getReceiver().equals(myUid) && chat.getSender().equals(hisUid)) {
                         HashMap<String, Object> hasSeenHashMap = new HashMap<>();
-                        hasSeenHashMap.put("IsSeen", true);
+                        hasSeenHashMap.put("isSeen", true);
                         ds.getRef().updateChildren(hasSeenHashMap);
                     }
                 }

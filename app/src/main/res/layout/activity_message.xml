@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background = "#8BA48D"
+    android:background="#8BA48D"
     tools:context=".MessageActivity">
 
     <!-- Recycler View -->
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chat_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/chatLayout"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <LinearLayout
         android:id="@+id/chatLayout"
@@ -36,7 +38,7 @@
 
             android:layout_weight="1"
             android:hint="Start typing"
-            android:padding="15dp"/>
+            android:padding="15dp" />
 
 
         <ImageButton
@@ -44,10 +46,11 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:src="@drawable/ic_send_message"/>
+            app:srcCompat="@drawable/ic_send_message" />
 
 
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
