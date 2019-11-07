@@ -48,11 +48,12 @@ public class ModelChat {
         this.timestamp = timestamp;
     }
 
-    public Boolean isSeen() {
+    public boolean isSeen() {
         return isSeen;
     }
 
-    public void setSeen(Boolean seen) {
+    public void setSeen(boolean seen) {
         isSeen = seen;
     }
+
 }

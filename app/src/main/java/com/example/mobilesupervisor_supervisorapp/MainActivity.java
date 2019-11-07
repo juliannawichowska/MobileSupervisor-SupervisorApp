@@ -129,19 +129,20 @@ public class MainActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
 
-
                             //get user email and uid
-                            //String email = user.getEmail();
-                            //String uid = user.getUid();
-                            //store data about user in database
-                            //HashMap<Object, String> hashMap = new HashMap<>();
-                            //hashMap.put("uid", uid);
+                            String email = user.getEmail();
+                            String uid = user.getUid();
+                            //Store info in Firebase database
+                            HashMap<Object, String> hashMap = new HashMap<>();
+                            hashMap.put("email", email);
+                            hashMap.put("uid", uid);
+
                             //firebase database instance
-                            //reference = FirebaseDatabase.getInstance().getReference().child("Users");
-                            //path to stored data about user named "Users"
-                            //DatabaseReference reference = database.getReference("Users");
-                            //pull data from hashMap do database
-                            //reference.setValue(uid);
+                            FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+                            //path to store data named "User"
+                            DatabaseReference reference = firebaseDatabase.getReference("Users");
+                            //put data in database
+                            reference.child(uid).setValue(hashMap);
 
                             //go to results activity after logging in
                             startActivity(new Intent(MainActivity.this,ResultsActivity.class));

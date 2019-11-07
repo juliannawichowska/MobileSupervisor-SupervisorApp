@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -16,8 +19,10 @@ import com.google.android.gms.fitness.FitnessOptions;
 import com.google.android.gms.fitness.data.DataType;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -26,6 +31,10 @@ public class ResultsActivity extends AppCompatActivity {
 
     //firebase auth
     FirebaseAuth firebaseAuth;
+
+    //uid of the users
+    String hisUid = "pXXgJXa0dwbGxdr5XOAyzvAxlJf1";
+    String myUid = "tS1fyOTPLaPxjj8OfofcnfOKQk82";
 
 
     @Override
@@ -54,6 +63,9 @@ public class ResultsActivity extends AppCompatActivity {
         //ActionBar and its title
         actionBar = getSupportActionBar();
 
+        //firebase auth instance
+        firebaseAuth = FirebaseAuth.getInstance();
+
 
         //Bottom navigation
         BottomNavigationView navigationView = findViewById(R.id.navigation_view);
@@ -65,10 +77,8 @@ public class ResultsActivity extends AppCompatActivity {
         FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
         ft3.replace(R.id.content,fragment3,"");
         ft3.commit();
-
-
-
     }
+
 
     private void accessGoogleFit() {
     }
@@ -90,10 +100,9 @@ public class ResultsActivity extends AppCompatActivity {
                         case R.id.navigation_video:
                             //video fragment transaction
                             actionBar.setTitle("Video");
-                            VideoFragment fragment2 = new VideoFragment();
-                            FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
-                            ft2.replace(R.id.content,fragment2,"");
-                            ft2.commit();
+                            Uri uri = Uri.parse("https://www.messenger.com/t"); // missing 'http://' will cause crashed
+                            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                            startActivity(intent);
                             return true;
                         case R.id.navigation_results:
                             //results fragment transaction
@@ -138,11 +147,10 @@ public class ResultsActivity extends AppCompatActivity {
         if (id==R.id.action_logout){
             firebaseAuth.signOut();
                  }
-
-
-
         return super.onOptionsItemSelected(item);
     }
+
+
 }
 
 

@@ -12,7 +12,6 @@ import android.graphics.ColorSpace;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -47,26 +46,16 @@ public class MessageActivity extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
 
     //uid of the users
-    String hisUid = "pXXgJXa0dwbGxdr5XOAyzvAxlJf1";
-    String myUid = "tS1fyOTPLaPxjj8OfofcnfOKQk82";
-
-
-
-    //check if user has seen message
-    ValueEventListener seenListener;
-    DatabaseReference userRefForSeen;
+    String hisUid = "tS1fyOTPLaPxjj8OfofcnfOKQk82";
+    String myUid = "pXXgJXa0dwbGxdr5XOAyzvAxlJf1";
 
     List<ModelChat> chatList;
     AdapterChat adapterChat;
-
-    private static final String TAG = "MyAppTag";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
-
-        Log.d(TAG, "2");
 
         messageEdit = findViewById(R.id.messageEdit);
         sendButton = findViewById(R.id.sendButton);
@@ -79,6 +68,9 @@ public class MessageActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(linearLayoutManager);
 
+        //ActionBar and its title
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Message");
 
         //firebase auth instance
         firebaseAuth = FirebaseAuth.getInstance();
@@ -101,67 +93,12 @@ public class MessageActivity extends AppCompatActivity {
             }
         });
 
-        Log.d(TAG, "niedzwiedz");
 
         readMessages();
-        Log.d(TAG, "4");
-
-        seenMessage();
-        Log.d(TAG, "5");
 
     }
 
-    private void checkUserStatus(){
-        //get current user
-        FirebaseUser user = firebaseAuth.getCurrentUser();
-        if (user != null) {
-            Log.d(TAG, "20");
-        } else {
-            Log.d(TAG, "10");
-            //startActivity(new Intent(this, MainActivity.class));
-            Toast.makeText(MessageActivity.this, "elooo", Toast.LENGTH_LONG).show();
-            //finish();
-        }
-    }
 
-    @Override
-    protected void onStart() {
-        Log.d(TAG, "elo");
-        checkUserStatus();
-        super.onStart();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        userRefForSeen.removeEventListener(seenListener);
-    }
-
-    private void seenMessage() {
-
-        userRefForSeen = FirebaseDatabase.getInstance().getReference("Messages");
-        seenListener = userRefForSeen.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                for (DataSnapshot ds: dataSnapshot.getChildren()){
-                    ModelChat chat = ds.getValue(ModelChat.class);
-                    if(chat.getReceiver().equals(myUid) && chat.getSender().equals(hisUid)) {
-                        HashMap<String, Object> hasSeenHashMap = new HashMap<>();
-                        hasSeenHashMap.put("isSeen", true);
-                        ds.getRef().updateChildren(hasSeenHashMap);
-                    }
-                }
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
-    }
 
     private void readMessages() {
 
