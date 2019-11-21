@@ -6,10 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -20,9 +18,6 @@ import com.google.android.gms.fitness.data.DataType;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.iid.FirebaseInstanceId;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -31,11 +26,6 @@ public class ResultsActivity extends AppCompatActivity {
 
     //firebase auth
     FirebaseAuth firebaseAuth;
-
-    //uid of the users
-    String hisUid = "pXXgJXa0dwbGxdr5XOAyzvAxlJf1";
-    String myUid = "tS1fyOTPLaPxjj8OfofcnfOKQk82";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,24 +56,20 @@ public class ResultsActivity extends AppCompatActivity {
         //firebase auth instance
         firebaseAuth = FirebaseAuth.getInstance();
 
-
         //Bottom navigation
         BottomNavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setOnNavigationItemSelectedListener(selectedListener);
 
         //Start from results fragment
         actionBar.setTitle("Results");
-        ResultsFragment fragment3 = new ResultsFragment();
-        FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
-        ft3.replace(R.id.content,fragment3,"");
-        ft3.commit();
+        //ResultsFragment fragment3 = new ResultsFragment();
+        //FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
+        //ft3.replace(R.id.content,fragment3,"");
+        //ft3.commit();
     }
-
 
     private void accessGoogleFit() {
     }
-
-
 
     //The bottom navigation method
     private BottomNavigationView.OnNavigationItemSelectedListener selectedListener =
@@ -97,20 +83,11 @@ public class ResultsActivity extends AppCompatActivity {
                             Intent a = new Intent(ResultsActivity.this,MessageActivity.class);
                             startActivity(a);
                             return true;
-                        case R.id.navigation_video:
-                            //video fragment transaction
-                            actionBar.setTitle("Video");
+                        case R.id.navigation_Messenger:
                             Uri uri = Uri.parse("https://www.messenger.com/t"); // missing 'http://' will cause crashed
                             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                             startActivity(intent);
-                            return true;
                         case R.id.navigation_results:
-                            //results fragment transaction
-                            actionBar.setTitle("Results");
-                            ResultsFragment fragment3 = new ResultsFragment();
-                            FragmentTransaction ft3 = getSupportFragmentManager().beginTransaction();
-                            ft3.replace(R.id.content,fragment3,"");
-                            ft3.commit();
                             return true;
                         case R.id.navigation_camera:
                             //camera fragment transaction
@@ -139,18 +116,22 @@ public class ResultsActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_up, menu);
         return super.onCreateOptionsMenu(menu);
     }
-    //handle lohout click
 
+    //handle logout click
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id==R.id.action_logout){
-            firebaseAuth.signOut();
-                 }
+            FirebaseAuth.getInstance().signOut();
+            FirebaseUser user = firebaseAuth.getCurrentUser();
+            if(user == null) {
+                startActivity(new Intent(ResultsActivity.this, MainActivity.class));
+            }
+
+
+        }
         return super.onOptionsItemSelected(item);
     }
-
-
 }
 
 

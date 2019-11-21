@@ -14,7 +14,7 @@
         android:title="@string/title_message" />
 
     <item
-        android:id="@+id/navigation_video"
+        android:id="@+id/navigation_Messenger"
         android:icon="@drawable/ic_video"
         android:title="@string/title_video" />
 
