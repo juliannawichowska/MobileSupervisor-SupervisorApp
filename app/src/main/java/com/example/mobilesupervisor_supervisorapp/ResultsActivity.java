@@ -72,14 +72,14 @@ public class ResultsActivity extends AppCompatActivity {
         //ft3.replace(R.id.content,fragment3,"");
         //ft3.commit();
 
-        FirebaseMessaging.getInstance().subscribeToTopic("supervisorMessages")
+        FirebaseMessaging.getInstance().subscribeToTopic("nadzorca")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (!task.isSuccessful()) {
                             Log.v("","success");
                         }
-                        Log.v("", "failure");
+                        Log.v("", "failure66");
                     }
                 });
     }
