@@ -1,0 +1,293 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mobilesupervisor_supervisorapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:7:22-64
+14
+15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-database:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\7c1b7712293eca3efa95a3298abb9169\firebase-database-19.2.0\AndroidManifest.xml:25:5-79
+17-->[com.google.firebase:firebase-database:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\7c1b7712293eca3efa95a3298abb9169\firebase-database-19.2.0\AndroidManifest.xml:25:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:24:5-68
+18-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:26:22-79
+20
+21    <application
+21-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:9:5-66:19
+22        android:allowBackup="true"
+22-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:10:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\478b79604eaaf934858ce3739dce1708\core-1.1.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:hardwareAccelerated="false"
+25-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:11:9-44
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:12:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:13:9-41
+28        android:largeHeap="true"
+28-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:14:9-33
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:15:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:16:9-35
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:17:9-40
+33        <service
+33-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:18:9-27:19
+34            android:name="com.example.mobilesupervisor_supervisorapp.MyFirebaseMessagingService"
+34-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:19:13-55
+35            android:enabled="true"
+35-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:20:13-35
+36            android:exported="true"
+36-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:21:13-36
+37            android:permission="com.google.android.c2dm.permission.SEND" >
+37-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:22:13-73
+38            <intent-filter>
+38-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:23:13-26:29
+39                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+39-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:24:17-78
+39-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:24:25-75
+40                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+40-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:25:17-81
+40-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:25:25-78
+41            </intent-filter>
+42        </service>
+43        <service
+43-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:28:9-35:19
+44            android:name="com.example.mobilesupervisor_supervisorapp.MyFirebaseInstanceIDService"
+44-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:29:13-56
+45            android:enabled="true"
+45-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:30:13-35
+46            android:exported="true" >
+46-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:31:13-36
+47            <intent-filter>
+47-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:32:13-34:29
+48                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+48-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:33:17-80
+48-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:33:25-77
+49            </intent-filter>
+50        </service>
+51
+52        <activity android:name="com.example.mobilesupervisor_supervisorapp.ResultsActivity" />
+52-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:37:9-53
+52-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:37:19-50
+53        <activity android:name="com.example.mobilesupervisor_supervisorapp.MessageActivity" />
+53-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:38:9-53
+53-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:38:19-50
+54        <activity android:name="com.example.mobilesupervisor_supervisorapp.HeartRateActivity" />
+54-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:39:9-54
+54-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:39:19-52
+55        <activity
+55-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:40:9-48:20
+56            android:name="com.example.mobilesupervisor_supervisorapp.MainActivity"
+56-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:41:13-41
+57            android:label="@string/app_name" >
+57-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:42:13-45
+58            <intent-filter>
+58-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:43:13-47:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:44:17-69
+59-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:44:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:46:17-77
+61-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:46:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <service
+65-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:50:9-57:19
+66            android:name="com.example.mobilesupervisor_supervisorapp.notifications.FirebaseMessaging"
+66-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:51:13-60
+67            android:enabled="true"
+67-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:52:13-35
+68            android:exported="true" >
+68-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:53:13-36
+69            <intent-filter>
+69-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:54:13-56:29
+70                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+70-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:24:17-78
+70-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:24:25-75
+71            </intent-filter>
+72        </service>
+73        <service
+73-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:58:9-65:19
+74            android:name="com.example.mobilesupervisor_supervisorapp.notifications.FirebaseService"
+74-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:59:13-58
+75            android:enabled="true"
+75-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:60:13-35
+76            android:exported="true" >
+76-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:61:13-36
+77            <intent-filter>
+77-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:62:13-64:29
+78                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />
+78-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:63:17-82
+78-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:63:25-79
+79            </intent-filter>
+80        </service>
+81
+82        <activity
+82-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:24:9-31:50
+83            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+83-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:25:13-85
+84            android:excludeFromRecents="true"
+84-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:26:13-46
+85            android:exported="true"
+85-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:27:13-36
+86            android:launchMode="singleTask"
+86-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:28:13-44
+87            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+87-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:29:13-102
+88            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+88-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:30:13-72
+89
+90        <service
+90-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:33:9-39:19
+91            android:name="com.google.firebase.components.ComponentDiscoveryService"
+91-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:34:13-84
+92            android:directBootAware="true"
+92-->[com.google.firebase:firebase-common:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\f2f464e7b3c96930b35ca6d6132a388c\firebase-common-19.2.0\AndroidManifest.xml:15:13-43
+93            android:exported="false" >
+93-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:35:13-37
+94            <meta-data
+94-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:36:13-38:85
+95                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+95-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:37:17-109
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\8aa3d6d048249cc1598139976559bd04\firebase-auth-19.1.0\AndroidManifest.xml:38:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-database:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\7c1b7712293eca3efa95a3298abb9169\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+98                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+98-->[com.google.firebase:firebase-database:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\7c1b7712293eca3efa95a3298abb9169\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-database:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\7c1b7712293eca3efa95a3298abb9169\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\44b784fabca10d2710bcf5b818712cb5\firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
+101                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+101-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\44b784fabca10d2710bcf5b818712cb5\firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\44b784fabca10d2710bcf5b818712cb5\firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
+104                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+104-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
+106        </service>
+107        <!--
+108             FirebaseMessagingService performs security checks at runtime,
+109             but set to not exported to explicitly avoid allowing another app to call it.
+110        -->
+111        <service
+111-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\71464dd8db9a3f5697d6429486f158e9\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
+112            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+112-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\71464dd8db9a3f5697d6429486f158e9\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
+113            android:exported="false" >
+113-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\71464dd8db9a3f5697d6429486f158e9\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
+114            <intent-filter android:priority="-500" >
+114-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:54:13-56:29
+115                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+115-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:24:17-78
+115-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:24:25-75
+116            </intent-filter>
+117        </service>
+118
+119        <activity
+119-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+120            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+120-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+121            android:excludeFromRecents="true"
+121-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+122            android:exported="false"
+122-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+124        <!--
+125            Service handling Google Sign-In user revocation. For apps that do not integrate with
+126            Google Sign-In, this service will never be started.
+127        -->
+128        <service
+128-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+129            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+129-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+130            android:exported="true"
+130-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+131            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+131-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+132
+133        <provider
+133-->[com.squareup.picasso:picasso:2.71828] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\01d7694794938d8c82e4a40ca117e9ad\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+134            android:name="com.squareup.picasso.PicassoProvider"
+134-->[com.squareup.picasso:picasso:2.71828] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\01d7694794938d8c82e4a40ca117e9ad\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+135            android:authorities="com.example.mobilesupervisor_supervisorapp.com.squareup.picasso"
+135-->[com.squareup.picasso:picasso:2.71828] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\01d7694794938d8c82e4a40ca117e9ad\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+136            android:exported="false" />
+136-->[com.squareup.picasso:picasso:2.71828] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\01d7694794938d8c82e4a40ca117e9ad\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+137
+138        <receiver
+138-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
+139            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+139-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
+140            android:exported="true"
+140-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
+141            android:permission="com.google.android.c2dm.permission.SEND" >
+141-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
+142            <intent-filter>
+142-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\3a776edb56a6f84e9382764897b93245\firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
+143                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+143-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:25:17-81
+143-->C:\Users\ktanska\AndroidStudioProjects\MobileSupervisor-supervisorApplication\app\src\main\AndroidManifest.xml:25:25-78
+144            </intent-filter>
+145        </receiver>
+146
+147        <activity
+147-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+148            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+148-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+149            android:exported="false"
+149-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+151
+152        <provider
+152-->[com.google.firebase:firebase-common:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\f2f464e7b3c96930b35ca6d6132a388c\firebase-common-19.2.0\AndroidManifest.xml:19:9-23:39
+153            android:name="com.google.firebase.provider.FirebaseInitProvider"
+153-->[com.google.firebase:firebase-common:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\f2f464e7b3c96930b35ca6d6132a388c\firebase-common-19.2.0\AndroidManifest.xml:20:13-77
+154            android:authorities="com.example.mobilesupervisor_supervisorapp.firebaseinitprovider"
+154-->[com.google.firebase:firebase-common:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\f2f464e7b3c96930b35ca6d6132a388c\firebase-common-19.2.0\AndroidManifest.xml:21:13-72
+155            android:exported="false"
+155-->[com.google.firebase:firebase-common:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\f2f464e7b3c96930b35ca6d6132a388c\firebase-common-19.2.0\AndroidManifest.xml:22:13-37
+156            android:initOrder="100" />
+156-->[com.google.firebase:firebase-common:19.2.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\f2f464e7b3c96930b35ca6d6132a388c\firebase-common-19.2.0\AndroidManifest.xml:23:13-36
+157
+158        <meta-data
+158-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\07bccb9a975e00908e892be57f14d1a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+159            android:name="com.google.android.gms.version"
+159-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\07bccb9a975e00908e892be57f14d1a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+160            android:value="@integer/google_play_services_version" />
+160-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ktanska\.gradle\caches\transforms-2\files-2.1\07bccb9a975e00908e892be57f14d1a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+161    </application>
+162
+163</manifest>

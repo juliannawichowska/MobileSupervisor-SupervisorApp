@@ -1,0 +1,4 @@
+#Mon Nov 25 23:27:18 CET 2019
+base.0=C\:\\Users\\ktanska\\AndroidStudioProjects\\MobileSupervisor-supervisorApplication\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

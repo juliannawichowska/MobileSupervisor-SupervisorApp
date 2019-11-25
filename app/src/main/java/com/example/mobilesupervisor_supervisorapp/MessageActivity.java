@@ -347,7 +347,7 @@ public class MessageActivity extends AppCompatActivity {
 
         reference.child("Messages").push().setValue(hashMap);
 
-        TOPIC = "/topics/patientMessages"; //topic must match with what the receiver subscribed to
+        TOPIC = "/topics/patient"; //topic must match with what the receiver subscribed to
 
         JSONObject notification = new JSONObject();
         JSONObject notificationBody = new JSONObject();
@@ -368,7 +368,7 @@ public class MessageActivity extends AppCompatActivity {
 
         //Path to place which will contain all send images
         final String timeStamp = ""+System.currentTimeMillis();
-        String fileNameAndPath = "ChatImages/"+"post_"+timeStamp;
+        String fileNameAndPath = "MessageImages/"+"post_"+timeStamp;
 
         Log.v("","gierrrrr");
 
@@ -401,7 +401,7 @@ public class MessageActivity extends AppCompatActivity {
                             databaseReference.child("Messages").push().setValue(hashMap);
 
 
-                            TOPIC = "/topics/patientMessages"; //topic must match with what the receiver subscribed to
+                            TOPIC = "/topics/patient"; //topic must match with what the receiver subscribed to
 
                             JSONObject notification = new JSONObject();
                             JSONObject notificationBody = new JSONObject();
@@ -424,8 +424,6 @@ public class MessageActivity extends AppCompatActivity {
                         //failed
                     }
                 });
-
-
     }
 
     private void sendNotification(JSONObject notification) {
@@ -434,6 +432,7 @@ public class MessageActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Log.i(TAG, "onResponse: " + response.toString());
+                        Toast.makeText(MessageActivity.this, "cos tu jest", Toast.LENGTH_LONG).show();
                     }
                 },
                 new Response.ErrorListener() {
