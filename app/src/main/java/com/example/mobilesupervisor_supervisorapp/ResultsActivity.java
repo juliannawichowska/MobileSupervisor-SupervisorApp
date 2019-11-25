@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -22,11 +25,24 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
-public class ResultsActivity extends AppCompatActivity {
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
+public class ResultsActivity extends AppCompatActivity {
+    private static final String TAG = "SMARTBAND";
     ActionBar actionBar;
+    public long stepsToday;
     final int GOOGLE_FIT_PERMISSIONS_REQUEST_CODE = System.identityHashCode(this) & 0xFFFF;
 
     //firebase auth
@@ -37,29 +53,12 @@ public class ResultsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
-        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
-        FitnessOptions fitnessOptions = FitnessOptions.builder()
-                .addDataType(DataType.TYPE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_READ)
-                .addDataType(DataType.AGGREGATE_STEP_COUNT_DELTA, FitnessOptions.ACCESS_READ)
-                .build();
-        if (!GoogleSignIn.hasPermissions(account, fitnessOptions)) {
-            GoogleSignIn.requestPermissions(
-                    this,
-                    GOOGLE_FIT_PERMISSIONS_REQUEST_CODE,
-                    account,
-                    fitnessOptions
-            );
-
-        }
-        else {
-            accessGoogleFit();
-        }
-
         //ActionBar and its title
         actionBar = getSupportActionBar();
 
         //firebase auth instance
         firebaseAuth = FirebaseAuth.getInstance();
+
 
         //Bottom navigation
         BottomNavigationView navigationView = findViewById(R.id.navigation_view);
@@ -82,11 +81,40 @@ public class ResultsActivity extends AppCompatActivity {
                         Log.v("", "failure");
                     }
                 });
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String strDate = dateFormat.format(date);
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("Results");
+        dbRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    for (DataSnapshot dsnap : ds.getChildren()) {
+                        StepsModel sm = dsnap.getValue(StepsModel.class);
+                       // HeartRateModel hr = dsnap.getValue(HeartRateModel.class);
+                       // Log.e(TAG, "value"+hr.Pulse);
+                        if(sm.Date.equals(strDate)) {
+                            stepsToday = sm.Steps;
+                            show_steps();
+                        }
+                }
+            }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.e(TAG, "Error occured");
+            }
+        });
     }
-
-    private void accessGoogleFit() {
+    public void show_steps() {
+        TextView stepsCount = (TextView) findViewById(R.id.textView);
+        if (stepsToday != 0) {
+            Log.e(TAG, "CO SIE DZIEJE" + stepsToday);
+            stepsCount.setText("Ilość kroków: " + String.valueOf(stepsToday));
+        } else {
+            stepsCount.setText("Nie odczytano kroków");
+        }
     }
-
     //The bottom navigation method
     private BottomNavigationView.OnNavigationItemSelectedListener selectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {

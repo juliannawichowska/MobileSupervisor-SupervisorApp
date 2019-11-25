@@ -52,6 +52,7 @@
 
         <activity android:name="com.example.mobilesupervisor_supervisorapp.ResultsActivity" />
         <activity android:name="com.example.mobilesupervisor_supervisorapp.MessageActivity" />
+        <activity android:name="com.example.mobilesupervisor_supervisorapp.HeartRateActivity" />
         <activity
             android:name="com.example.mobilesupervisor_supervisorapp.MainActivity"
             android:label="@string/app_name" >

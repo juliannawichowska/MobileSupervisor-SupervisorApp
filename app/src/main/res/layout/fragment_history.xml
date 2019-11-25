@@ -5,12 +5,48 @@
     android:layout_height="match_parent"
     tools:context=".HistoryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAlignment="center"
         android:textSize="30sp"
         android:gravity="center" />
+    <LinearLayout
+        android:id="@+id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ostatnie 30 minut" />
+
+        <Button
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ostatnia godzina" />
+
+        <Button
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ostatni dzień" />
+
+        <Button
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ostatni tydzień" />
+
+        <Button
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ostatni miesiąc" />
+    </LinearLayout>
 
 </FrameLayout>
