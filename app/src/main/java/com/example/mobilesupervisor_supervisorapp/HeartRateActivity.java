@@ -49,6 +49,7 @@ public class HeartRateActivity extends AppCompatActivity {
     TextView text;
     LineChartView lineChartView;
     String label;
+    double average_hr;
 
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -129,6 +130,7 @@ public class HeartRateActivity extends AppCompatActivity {
                     }
                 }
                 drawChart(hrvalue, hrdate);
+                setInfo(hrvalue);
             }
 
             @Override
@@ -137,7 +139,14 @@ public class HeartRateActivity extends AppCompatActivity {
             }
         });
     }
-
+    public void setInfo(List<Integer> hrvalue) {
+        int tmp = 0;
+        for(int i=0; i<hrvalue.size(); i++) {
+            tmp = tmp + hrvalue.get(i);
+        }
+        average_hr = tmp/hrvalue.size();
+        text.setText("Średnia wartość pulsu w tym okresie"+average_hr);
+    }
     public void drawChart(List<Integer> hrvalue, List<String> hrdate) {
         lineChartView = findViewById(R.id.chart);
         List yAxisValues = new ArrayList();

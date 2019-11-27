@@ -1,25 +1,18 @@
 package com.example.mobilesupervisor_supervisorapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.fitness.FitnessOptions;
-import com.google.android.gms.fitness.data.DataType;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -29,15 +22,19 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
+
+import org.w3c.dom.Text;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class ResultsActivity extends AppCompatActivity {
     private static final String TAG = "SMARTBAND";
@@ -91,8 +88,6 @@ public class ResultsActivity extends AppCompatActivity {
                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
                     for (DataSnapshot dsnap : ds.getChildren()) {
                         StepsModel sm = dsnap.getValue(StepsModel.class);
-                       // HeartRateModel hr = dsnap.getValue(HeartRateModel.class);
-                       // Log.e(TAG, "value"+hr.Pulse);
                         if(sm.Date.equals(strDate)) {
                             stepsToday = sm.Steps;
                             show_steps();
@@ -105,9 +100,44 @@ public class ResultsActivity extends AppCompatActivity {
                 Log.e(TAG, "Error occured");
             }
         });
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+        Query lastQuery = databaseReference.child("Results").child("Heart Rate").orderByKey().limitToLast(1);
+        lastQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                int last;
+                TextView last_hr = (TextView) findViewById(R.id.last_hr);
+                String message = dataSnapshot.getValue().toString();
+                Log.e(TAG, "cos"+message);
+                Pattern pattern = Pattern.compile("Pulse=(.*?),");
+                Matcher matcher = pattern.matcher(message);
+                String hr_date = message.substring(message.lastIndexOf("=")+1);
+                while (matcher.find()) {
+                    Log.e(TAG, "COS TAM"+(matcher.group(1)));
+                    last=Integer.parseInt(matcher.group(1));
+                    last_hr.setText("Puls: "+matcher.group(1)+"\n");
+                    make_hr_output(last, last_hr);
+                }
+                    last_hr.append("Data ostatniego pomiaru: \n"+hr_date.substring(0,hr_date.length()-2));
+                    Log.e(TAG, "COS TAM"+(hr_date));
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Handle possible errors.
+            }
+        });
+    }
+    private void make_hr_output(int hr, TextView info) {
+        if (hr < 60 || hr > 80) {
+            info.setTextColor(this.getResources().getColor(R.color.Orange));
+        }
+        else {
+            info.setTextColor(this.getResources().getColor(R.color.colorGrey));
+        }
     }
     public void show_steps() {
-        TextView stepsCount = (TextView) findViewById(R.id.textView);
+        TextView stepsCount = (TextView) findViewById(R.id.steps_today);
         if (stepsToday != 0) {
             Log.e(TAG, "CO SIE DZIEJE" + stepsToday);
             stepsCount.setText("Ilość kroków: " + String.valueOf(stepsToday));

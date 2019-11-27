@@ -16,15 +16,31 @@
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/navigation_view"
         app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:id="@+id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/steps_today"
             android:layout_width="401dp"
             android:layout_height="wrap_content"
             android:fontFamily="Arial"
             android:text="kroki"
+            android:textColor="@color/SlateGray"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/last_hr"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:text="puls"
             android:textColor="@color/FireBrick"
             android:textSize="40sp" />
+        </LinearLayout>
     </FrameLayout>
 
 
