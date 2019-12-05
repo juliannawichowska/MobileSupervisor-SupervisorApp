@@ -108,18 +108,15 @@ public class ResultsActivity extends AppCompatActivity {
                 int last;
                 TextView last_hr = (TextView) findViewById(R.id.last_hr);
                 String message = dataSnapshot.getValue().toString();
-                Log.e(TAG, "cos"+message);
                 Pattern pattern = Pattern.compile("Pulse=(.*?),");
                 Matcher matcher = pattern.matcher(message);
                 String hr_date = message.substring(message.lastIndexOf("=")+1);
                 while (matcher.find()) {
-                    Log.e(TAG, "COS TAM"+(matcher.group(1)));
                     last=Integer.parseInt(matcher.group(1));
                     last_hr.setText("Puls: "+matcher.group(1)+"\n");
                     make_hr_output(last, last_hr);
                 }
                     last_hr.append("Data ostatniego pomiaru: \n"+hr_date.substring(0,hr_date.length()-2));
-                    Log.e(TAG, "COS TAM"+(hr_date));
             }
 
             @Override
@@ -139,7 +136,6 @@ public class ResultsActivity extends AppCompatActivity {
     public void show_steps() {
         TextView stepsCount = (TextView) findViewById(R.id.steps_today);
         if (stepsToday != 0) {
-            Log.e(TAG, "CO SIE DZIEJE" + stepsToday);
             stepsCount.setText("Ilość kroków: " + String.valueOf(stepsToday));
         } else {
             stepsCount.setText("Nie odczytano kroków");

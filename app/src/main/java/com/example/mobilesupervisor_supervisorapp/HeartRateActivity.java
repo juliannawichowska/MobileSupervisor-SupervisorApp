@@ -1,16 +1,13 @@
 package com.example.mobilesupervisor_supervisorapp;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -64,7 +61,6 @@ public class HeartRateActivity extends AppCompatActivity {
                     for (DataSnapshot dsnap : ds.getChildren()) {
                         HeartRateModel hr = dsnap.getValue(HeartRateModel.class);
                         try {
-                            Log.e(TAG, "value " + hr.getPulse());
                             date1 = new SimpleDateFormat("yyyy-MM-dd HH-mm").parse(hr.Date);
                         } catch (ParseException e) {
                             continue;
@@ -74,10 +70,8 @@ public class HeartRateActivity extends AppCompatActivity {
                             label = "Ostatnie 30 minut";
                             long MAX_DURATION = MILLISECONDS.convert(30, MINUTES);
                             if (duration > MAX_DURATION) {
-                                Log.e(TAG, "value1111111 ");
                                 continue;
                             } else {
-                                Log.e(TAG, "value1111111 " + hr.getPulse());
                                 hrvalue.add(hr.Pulse);
                                 hrdate.add(hr.getDate());
                             }
@@ -85,10 +79,8 @@ public class HeartRateActivity extends AppCompatActivity {
                             label = "Ostatnia godzina";
                             long MAX_DURATION = MILLISECONDS.convert(1, HOURS);
                             if (duration > MAX_DURATION) {
-                                Log.e(TAG, "value1111111 ");
                                 continue;
                             } else {
-                                Log.e(TAG, "value1111111 " + hr.getPulse());
                                 hrvalue.add(hr.Pulse);
                                 hrdate.add(hr.getDate());
                             }
@@ -96,10 +88,8 @@ public class HeartRateActivity extends AppCompatActivity {
                             label = "Ostatni dzień";
                             long MAX_DURATION = MILLISECONDS.convert(24, HOURS);
                             if (duration > MAX_DURATION) {
-                                Log.e(TAG, "value1111111 ");
                                 continue;
                             } else {
-                                Log.e(TAG, "value1111111 " + hr.getPulse());
                                 hrvalue.add(hr.Pulse);
                                 hrdate.add(hr.getDate());
                             }
@@ -107,10 +97,8 @@ public class HeartRateActivity extends AppCompatActivity {
                             label = "Ostatni tydzień";
                             long MAX_DURATION = MILLISECONDS.convert(7, DAYS);
                             if (duration > MAX_DURATION) {
-                                Log.e(TAG, "value1111111 ");
                                 continue;
                             } else {
-                                Log.e(TAG, "value1111111 " + hr.getPulse());
                                 hrvalue.add(hr.Pulse);
                                 hrdate.add(hr.getDate());
                             }
@@ -118,10 +106,8 @@ public class HeartRateActivity extends AppCompatActivity {
                             label = "Ostatni miesiąc";
                             long MAX_DURATION = MILLISECONDS.convert(30, DAYS);
                             if (duration > MAX_DURATION) {
-                                Log.e(TAG, "value1111111 ");
                                 continue;
                             } else {
-                                Log.e(TAG, "value1111111 " + hr.getPulse());
                                 hrvalue.add(hr.Pulse);
                                 hrdate.add(hr.getDate());
                             }
@@ -157,11 +143,9 @@ public class HeartRateActivity extends AppCompatActivity {
         String[] hrdate_array = new String[hrdate.size()];
         for (int i = 0; i < hrvalue.size(); i++) {
             hrvalue_array[i] = hrvalue.get(i);
-            Log.e(TAG, "WARTOSC"+hrvalue_array[i]);
         }
         for (int i = 0; i < hrdate.size(); i++) {
             hrdate_array[i] = hrdate.get(i);
-            Log.e(TAG, "ZMIENNA"+hrdate_array[i]);
         }
         for(int i = 0; i < hrdate_array.length; i++){
             axisValues.add(i, new AxisValue(i).setLabel(hrdate_array[i]));
